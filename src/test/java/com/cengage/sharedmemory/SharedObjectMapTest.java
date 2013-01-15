@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SharedObjectServiceTest {
+public class SharedObjectMapTest {
 
 	@Test
 	public void canAcceptAnObjectToStore() throws Exception {
-		SharedObjectService service = new SharedObjectService(System.getProperty("java.io.tmpdir"), "test");
+		SharedObjectMap service = new SharedObjectMap(System.getProperty("java.io.tmpdir"), "test");
 		
 		Object value = service.put("key", "value");
 		

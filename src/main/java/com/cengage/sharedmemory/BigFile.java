@@ -53,48 +53,20 @@ public class BigFile {
 	}
 
 	public byte[] get(Location location) {
-		byte[] filedata = new byte[location.size];
+		byte[] filedata = new byte[location.getSize()];
 		ByteBuffer readBuffer = buffers.get(location.getFile()).duplicate();
-		readBuffer.position(location.start);
-		readBuffer.get(filedata, 0, location.size);
+		readBuffer.position(location.getStart());
+		readBuffer.get(filedata, 0, location.getSize());
 		return filedata;
 	}
 
 	public void update(Location location, byte[] data) {
 		ByteBuffer readBuffer = buffers.get(currentFile).duplicate();
-		readBuffer.position(location.start);
+		readBuffer.position(location.getStart());
 		readBuffer.put(data);
 	}
 
-	public class Location {
-		private int file;
-		private int start;
-		private int size;
-		public Location(int file, int start, int size) {
-			super();
-			this.file = file;
-			this.start = start;
-			this.size = size;
-		}
-		public int getFile() {
-			return file;
-		}
-		public void setFile(int file) {
-			this.file = file;
-		}
-		public int getStart() {
-			return start;
-		}
-		public void setStart(int start) {
-			this.start = start;
-		}
-		public int getSize() {
-			return size;
-		}
-		public void setSize(int size) {
-			this.size = size;
-		}
-	}
+
 
 	public void close() {
 		for (RandomAccessFile file : this.backingFiles) {
