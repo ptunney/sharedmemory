@@ -1,4 +1,4 @@
-package com.cengage.sharedmemory;
+package com.orbism.sharedmemory;
 
 import java.io.File;
 import java.io.FilenameFilter;

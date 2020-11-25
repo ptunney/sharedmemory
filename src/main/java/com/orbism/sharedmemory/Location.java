@@ -1,4 +1,4 @@
-package com.cengage.sharedmemory;
+package com.orbism.sharedmemory;
 
 public class Location {
 	private int file;

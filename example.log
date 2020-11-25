@@ -199,4 +199,10 @@ INFO main com.cengage.sharedmemory.SharedObjectMap - Creating shared object repo
 	INFO main com.cengage.sharedmemory.SharedObjectMap - Creating shared object repository with prefix test in C:\Users\Paul\AppData\Local\Temp\
 	INFO main com.cengage.sharedmemory.SharedObjectMap - Creating shared object repository with prefix test in C:\Users\Paul\AppData\Local\Temp\
 	DEBUG main com.cengage.sharedmemory.SharedObjectMap - Adding key :key
+	INFO main com.orbism.sharedmemory.SharedObjectMap - Creating shared object repository with prefix test in /tmp
+	DEBUG main com.orbism.sharedmemory.SharedObjectMap - Adding key :key
+	INFO main com.orbism.sharedmemory.SharedObjectMap - Creating shared object repository with prefix test in /tmp
+	DEBUG main com.orbism.sharedmemory.SharedObjectMap - Adding key :key
+	INFO main com.orbism.sharedmemory.SharedObjectMap - Creating shared object repository with prefix test in /tmp
+	DEBUG main com.orbism.sharedmemory.SharedObjectMap - Adding key :key
 	
